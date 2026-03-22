@@ -520,6 +520,12 @@ footer {
   z-index: 1;
 }
 
+/* GitHub */
+.social-link[href*="github"]:hover {
+  background: #24292e; 
+  transform: translateY(-5px);
+}
+
 /* Facebook */
 .social-link[href*="facebook"]:hover {
   background: #1877F2;
