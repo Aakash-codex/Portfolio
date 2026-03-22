@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hiroshima Peace Memorial Museum</title>
+  <link rel="stylesheet" href="css/style.css"> 
+  <script src="js/script.js" defer></script> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&family=Noto+Sans+Devanagari&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-wrap">
+      <img src="images/logo.PNG" alt="Logo" class="logo">
+    </a>
+
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="visit.html">Visitor Info</a>
+      <a href="learn.html">Learn</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="contact-form-container">
+      <h1 class="otoiawase">お問い合わせ</h1>
+      <form action="#" method="POST">
+        <label for="name">お名前 <span class="required" aria-hidden="true">*</span></label>
+        <input type="text" id="name" name="name" placeholder="例：山田 太郎" required />
+    
+        <label for="email">メールアドレス <span class="required" aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+    
+        <label for="subject">件名</label>
+        <input type="text" id="subject" name="subject" placeholder="お問い合わせの件名を入力してください" />
+    
+        <label for="message">メッセージ <span class="required" aria-hidden="true">*</span></label>
+        <textarea id="message" name="message" placeholder="メッセージを入力してください" required></textarea>
+    
+        <button type="submit">送信</button>
+      </form>
+    </div>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <img src="images/logo.PNG" alt="Museum Logo" class="footer-logo">
+            <h3>Hiroshima Peace Memorial Museum</h3>
+            <p>平和の尊さを伝える場所。未来のために、過去を忘れない。</p>
+          </div>
+          <div class="footer-middle">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="exhibitions.html">Exhibitions</a></li>
+              <li><a href="visit.html">Visitor Info</a></li>
+              <li><a href="learn.html">Learn</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <h4>Contact</h4>
+            <p>〒730-0811 広島市中区中島町1-2<br>Tel: 082-241-4004</p>
+            <p>Email: info@hiroshima-museum.jp</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2025 Hiroshima Peace Memorial Museum. All rights reserved.
+        </div>
+      </footer>
+</body>
+</html>

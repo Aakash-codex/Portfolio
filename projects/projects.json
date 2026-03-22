@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Personal Portfolio Website",
+    "description": "A modern, responsive single-page portfolio built with HTML, CSS, and JavaScript.",
+    "image": "images/Icon/ohm.png",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "liveUrl": "",
+    "repoUrl": ""
+  },
+  {
+    "title": "Landing Page Design",
+    "description": "Clean landing page layout focusing on typography, color, and responsive sections.",
+    "image": "images/Icon/A.png",
+    "tags": ["Responsive Design", "UI", "Frontend"],
+    "liveUrl": "",
+    "repoUrl": ""
+  },
+  {
+    "title": "Simple Blog Website",
+    "description": "Multi-section blog layout with posts, sidebar, and contact area.",
+    "image": "images/IMG_3015.jpeg",
+    "tags": ["HTML", "CSS", "Layout"],
+    "liveUrl": "",
+    "repoUrl": ""
+  }
+]

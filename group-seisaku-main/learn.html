@@ -1,0 +1,294 @@
+ <!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-wrap">
+      <img src="images/logo.PNG" alt="Logo" class="logo">
+    </a>
+
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="visit.html">Visitor Info</a>
+      <a href="learn.html">Learn</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+    <div class="container">
+        <section id="purpose-guide">
+            <h2>目的別利用案内</h2>
+            <p>ご利用の目的に合わせて最適なリソースをご案内します</p>
+            
+            <nav class="purpose-nav">
+                <button class="purpose-btn experience active" data-purpose="experience">体験や解説を聴く</button>
+                <button class="purpose-btn learn" data-purpose="learn">原爆・平和について学ぶ</button>
+                <button class="purpose-btn materials" data-purpose="materials">資料を探す・活用する</button>
+            </nav>
+            
+            <!-- 体験や解説を聴く -->
+            <div id="experience" class="purpose-content experience" style="display:block;">
+                <div class="card-container">
+                    <div class="card experience">
+                        <div class="card-header">バーチャルツアー</div>
+                        <div class="card-body">
+                            <p>当館の展示をオンラインで体験できます。360度ビューで実際に訪れたような体験が可能です。</p>
+                            <div class="virtual-tour-placeholder" style="background: #f5f5f5; height: 200px; display: flex; align-items: center; justify-content: center; margin: 15px 0; border-radius: 4px;">
+                                
+                                <a href="https://www.pcf.city.hiroshima.jp/virtual/map-e/">[360° バーチャルツアー表示エリア]</a>
+                            </div>
+                            <a href="#" class="btn">ツアーを開始</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card experience">
+                        <div class="card-header">音声ガイド</div>
+                        <div class="card-body">
+                            <p>主要展示の解説を音声でお楽しみいただけます。日本語と英語に対応しています。</p>
+                            <audio controls style="width: 100%; margin: 15px 0;">
+                                <source src="audio/guide1.mp3" type="audio/mpeg">
+                                お使いのブラウザは音声要素をサポートしていません。
+                            </audio>
+                            <a href="#" class="btn">すべての音声ガイド</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card experience">
+                        <div class="card-header">被爆者証言</div>
+                        <div class="card-body">
+                            <p>被爆者の方々の貴重な証言を収録した音声アーカイブです。</p>
+                            <audio controls style="width: 100%; margin: 15px 0;">
+                                <source src="audio/testimony1.mp3" type="audio/mpeg">
+                                お使いのブラウザは音声要素をサポートしていません。
+                            </audio>
+                            <button class="btn" id="show-transcript">証言テキストを表示</button>
+                            <div id="transcript" style="display:none; margin-top:15px; padding:15px; background:#f5f5f5; border-radius:4px;">
+                                [ここに証言の文字起こしテキストが表示されます]
+                            </div>
+                            <a href="#" class="btn" style="margin-top: 10px;">証言アーカイブへ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 原爆・平和について学ぶ -->
+            <div id="learn" class="purpose-content learn">
+                <div class="card-container">
+                    <div class="card learn">
+                        <div class="card-header">平和学習プログラム</div>
+                        <div class="card-body">
+                            <p>学校向けに開発された平和学習プログラムです。年齢に応じた教材をご用意しています。</p>
+                            <ul style="margin: 15px 0; padding-left: 20px;">
+                                <li>小学生向けプログラム</li>
+                                <li>中高生向けプログラム</li>
+                                <li>大学生・一般向けプログラム</li>
+                            </ul>
+                            <a href="#" class="btn">詳細を見る</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card learn">
+                        <div class="card-header">原爆の歴史</div>
+                        <div class="card-body">
+                            <p>原爆投下までの歴史的背景、投下直後の状況、その後の復興までの流れを学べます。</p>
+                            <div style="margin: 15px 0;">
+                                <img src="images/imagr_123.jpg" alt="歴史タイムライン" style="width: 100%; height: auto; border-radius: 4px;">
+                            </div>
+                            <a href="#" class="btn">タイムラインを見る</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card learn">
+                        <div class="card-header">平和教育リソース</div>
+                        <div class="card-body">
+                            <p>教師や指導者向けの平和教育教材をダウンロードできます。</p>
+                            <div style="margin: 15px 0;">
+                                <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <span style="margin-right: 10px;">📚</span>
+                                    <span>授業用スライドセット</span>
+                                </div>
+                                <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                                    <span style="margin-right: 10px;">🎥</span>
+                                    <span>教育用動画集</span>
+                                </div>
+                                <div style="display: flex; align-items: center;">
+                                    <span style="margin-right: 10px;">📝</span>
+                                    <span>ワークシート</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn">教材をダウンロード</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 資料を探す・活用する -->
+            <div id="materials" class="purpose-content materials">
+                <div class="search-box">
+                    <h3>資料検索</h3>
+                    <form class="search-form">
+                        <input type="text" class="search-input" placeholder="キーワードを入力...">
+                        <button type="submit" class="search-btn">検索</button>
+                    </form>
+                    
+                    <div style="margin-top: 20px;">
+                        <details>
+                            <summary>詳細検索オプション</summary>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px;">
+                                <div>
+                                    <label>カテゴリ</label>
+                                    <select style="width: 100%; padding: 8px; margin-top: 5px;">
+                                        <option>すべて</option>
+                                        <option>写真</option>
+                                        <option>文書</option>
+                                        <option>証言記録</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label>年代</label>
+                                    <select style="width: 100%; padding: 8px; margin-top: 5px;">
+                                        <option>すべて</option>
+                                        <option>1945年以前</option>
+                                        <option>1945年（被爆年）</option>
+                                        <option>1946-1950年</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label>言語</label>
+                                    <select style="width: 100%; padding: 8px; margin-top: 5px;">
+                                        <option>すべて</option>
+                                        <option>日本語</option>
+                                        <option>英語</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                
+                <div class="card-container">
+                    <div class="card materials">
+                        <div class="card-header">写真アーカイブ</div>
+                        <div class="card-body">
+                            <p>被爆前後の広島の様子を記録した貴重な写真資料です。</p>
+                            <div style="margin: 15px 0;">
+                                <img src="images/img_cd1d7be65bb0f72ee7193266ec061a101888793.jpg" alt="写真アーカイブ" style="width: 100%; height: auto; border-radius: 4px;">
+                            </div>
+                            <a href="https://www.hiroshimapeacemedia.jp/?gallery=20090216163036561_ja" class="btn">写真アーカイブへ</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card materials">
+                        <div class="card-header">文書資料</div>
+                        <div class="card-body">
+                            <p>当時の公文書、日記、記録文書などの一次史料をデジタル化したコレクションです。</p>
+                            <div style="margin: 15px 0; background: #f5f5f5; padding: 15px; border-radius: 4px;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                    <span>被爆者健康手帳</span>
+                                    <span>1957年</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between;">
+                                    <span>復興計画文書</span>
+                                    <span>1949年</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn">文書資料を見る</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card materials">
+                        <div class="card-header">研究支援</div>
+                        <div class="card-body">
+                            <p>研究活動をサポートする各種ツールやサービスをご利用いただけます。</p>
+                            <ul style="margin: 15px 0; padding-left: 20px;">
+                                <li>文献リスト生成ツール</li>
+                                <li>引用ガイドライン</li>
+                                <li>資料複写申請</li>
+                                <li>学芸員相談</li>
+                            </ul>
+                            <a href="#" class="btn">研究支援サービス</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <img src="images/logo.PNG" alt="Museum Logo" class="footer-logo">
+            <h3>Hiroshima Peace Memorial Museum</h3>
+            <p>平和の尊さを伝える場所。未来のために、過去を忘れない。</p>
+          </div>
+          <div class="footer-middle">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Exhibitions</a></li>
+              <li><a href="#">Visitor Info</a></li>
+              <li><a href="#">Learn</a></li>
+              <li><a href="#">About us</a></li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <h4>Contact</h4>
+            <p>〒730-0811 広島市中区中島町1-2<br>Tel: 082-241-4004</p>
+            <p>Email: info@hiroshima-museum.jp</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2025 Hiroshima Peace Memorial Museum. All rights reserved.
+        </div>
+      </footer>
+    <script>
+        // 目的別ナビゲーション切り替え
+        document.querySelectorAll('.purpose-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // すべてのボタンを非アクティブに
+                document.querySelectorAll('.purpose-btn').forEach(b => b.classList.remove('active'));
+                // すべてのコンテンツを非表示に
+                document.querySelectorAll('.purpose-content').forEach(c => c.style.display = 'none');
+                
+                // 選択したボタンをアクティブに
+                btn.classList.add('active');
+                const purposeId = btn.getAttribute('data-purpose');
+                document.getElementById(purposeId).style.display = 'block';
+            });
+        });
+        
+        // 証言テキスト表示/非表示
+        document.getElementById('show-transcript')?.addEventListener('click', function() {
+            const transcript = document.getElementById('transcript');
+            if (transcript.style.display === 'none') {
+                transcript.style.display = 'block';
+                this.textContent = '証言テキストを非表示';
+            } else {
+                transcript.style.display = 'none';
+                this.textContent = '証言テキストを表示';
+            }
+        });
+        
+        // 検索フォーム送信
+        document.querySelector('.search-form')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const searchTerm = this.querySelector('.search-input').value;
+            alert(`「${searchTerm}」で検索します（実際のサイトでは検索APIを呼び出します）`);
+            // ここで実際の検索処理を実装
+        });
+    </script>
+</body>
+</html>
