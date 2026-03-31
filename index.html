@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aakash - Frontend Developer Portfolio">
+    <link rel="icon" type="image/png" href="images/Icon/A.png" sizes="64x64">
+    <link rel="icon" type="image/png" href="images/Icon/A.png" sizes="96x96">
+    <link rel="apple-touch-icon" href="images/Icon/A.png" sizes="96x96">
+    <style>
+      .favicon-container {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      }
+      .favicon-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      /* Adjust header margin */
+      header {
+        margin-top: 0;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          margin-top: 0;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Aakash - Frontend Developer</title>
+  </head>
+  <body class="lang-en">
+    <header id="top">
+      <div class="logo-container">
+        <h2><a href="index.html" class="logotext">Aakash</a></h2>
+      </div>
+      
+      <nav>
+        <a href="index.html"><span data-lang="en">Home</span><span data-lang="ja">ホーム</span></a>
+        <a href="#about"><span data-lang="en">About</span><span data-lang="ja">自己紹介</span></a>
+        <a href="#news"><span data-lang="en">News</span><span data-lang="ja">ニュース</span></a>
+        <a href="#projects"><span data-lang="en">Projects</span><span data-lang="ja">プロジェクト</span></a>
+        <a href="#skills"><span data-lang="en">Skills</span><span data-lang="ja">スキル</span></a>
+        <a href="#contact"><span data-lang="en">Contact</span><span data-lang="ja">お問い合わせ</span></a>
+      </nav>
+
+      <div class="header-controls">
+        <!-- Language Toggle -->
+        <label class="lang-switch" for="langCheckbox">
+          <input type="checkbox" id="langCheckbox" />
+          <div class="slider">
+            <span class="en icon">EN</span>
+            <span class="jp icon">日本語</span>
+          </div>
+        </label>
+
+        <!-- Theme Toggle -->
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider">
+            <span class="icon">🌙</span>
+            <span class="icon">☀️</span>
+          </div>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section" id="home">
+        <div class="hero-content">
+          <div class="hero-text-content">
+            <p class="hero_text">
+              <span class="typed-text"></span>
+            </p>
+            <div class="hero-description">
+              <div data-lang="en">
+                <p><strong>A passionate Frontend Developer in Tokyo, Japan 🗼</strong></p>
+                <p>
+                  Crafting user-friendly web experiences with modern technologies. 
+                  Specialized in HTML5, CSS3, JavaScript, and responsive design. 
+                  Currently exploring new ways to create engaging digital solutions.
+                </p>
+              </div>
+              <div data-lang="ja">
+                <p><strong>東京を拠点に活動する情熱的なフロントエンドエンジニア 🗼</strong></p>
+                <p>
+                  最新の技術を用いて、ユーザーフレンドリーなウェブ体験を構築しています。
+                  HTML5、CSS3、JavaScript、レスポンシブデザインを専門としています。
+                  現在、魅力的なデジタルソリューションを作成するための新しい方法を模索しています。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-container">
+              <img src="images/Untitled design.jpg" class="profile-image" alt="Aakash - Frontend Developer" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="container">
+          <h2 class="section-title"><span data-lang="en">About Me</span><span data-lang="ja">自己紹介</span></h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p class="about-greeting" data-lang="en">Hi there! I'm Aakash</p>
+              <p class="about-greeting" data-lang="ja">こんにちは！アーカーシュです</p>
+              
+              <div data-lang="en">
+                <p class="about-details">
+                  I'm a passionate student developer in Tokyo, Japan, with a strong enthusiasm for web development. 
+                  I love creating websites and learning new technologies to improve my skills.
+                </p>
+                <p class="about-details">My current tech stack includes:</p>
+              </div>
+              <div data-lang="ja">
+                <p class="about-details">
+                  私は東京で学ぶ学生エンジニアで、ウェブ開発に対して強い情熱を持っています。
+                  ウェブサイトを作成することや、スキルを向上させるために新しい技術を学ぶことが大好きです。
+                </p>
+                <p class="about-details">現在の技術スタック:</p>
+              </div>
+
+              <ul class="about-skills">
+                <li><span data-lang="en">HTML5 & CSS3 for creating responsive layouts</span><span data-lang="ja">HTML5 & CSS3 を使用したレスポンシブレイアウトの作成</span></li>
+                <li><span data-lang="en">JavaScript for interactive web features</span><span data-lang="ja">JavaScript を使用したインタラクティブな機能の実装</span></li>
+                <li><span data-lang="en">PHP for backend functionality</span><span data-lang="ja">PHP を使用したバックエンド機能の開発</span></li>
+                <li><span data-lang="en">Java programming</span><span data-lang="ja">Java プログラミング</span></li>
+                <li><span data-lang="en">Basic web design principles</span><span data-lang="ja">基本的なウェブデザインの原則</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news-section" id="news">
+        <div class="container">
+          <h2 class="section-title"><span data-lang="en">News</span><span data-lang="ja">ニュース</span></h2>
+          <div class="news-teaser-container">
+            <!-- Inokashira Park News -->
+            <a href="news.html#inokashira" class="news-teaser-link">
+              <div class="news-teaser-content">
+                <div class="news-teaser-image">
+                  <img src="images/inokasira.jpeg" alt="Inokashira Park">
+                </div>
+                <div class="news-teaser-text">
+                  <span class="news-teaser-date">Park</span>
+                  <h3 class="news-teaser-headline">井の頭恩賜公園の美しい景色</h3>
+                </div>
+                <div class="news-teaser-arrow">
+                  <span data-lang="en">Read Details →</span><span data-lang="ja">詳細を見る →</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Graduation News -->
+            <a href="news.html#graduation" class="news-teaser-link" style="margin-top: 20px;">
+              <div class="news-teaser-content">
+                <div class="news-teaser-image">
+                  <img src="images/IMG_0469.jpeg" alt="Graduation Ceremony">
+                </div>
+                <div class="news-teaser-text">
+                  <span class="news-teaser-date">2026.03.30</span>
+                  <h3 class="news-teaser-headline">２０２６年３月 卒業式</h3>
+                </div>
+                <div class="news-teaser-arrow">
+                  <span data-lang="en">Read Details →</span><span data-lang="ja">詳細を見る →</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Billiards News -->
+            <a href="news.html#billiards" class="news-teaser-link" style="margin-top: 20px;">
+              <div class="news-teaser-content">
+                <div class="news-teaser-image">
+                  <img src="images/pool1.jpeg" alt="Billiards">
+                </div>
+                <div class="news-teaser-text">
+                  <span class="news-teaser-date">Hobby</span>
+                  <h3 class="news-teaser-headline">ビリヤード仲間、募集します！</h3>
+                </div>
+                <div class="news-teaser-arrow">
+                  <span data-lang="en">Read Details →</span><span data-lang="ja">詳細を見る →</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="skill-section" id="skills">
+        <h2 class="section-title"><span data-lang="en">My Skills</span><span data-lang="ja">スキル</span></h2>
+        <div class="skill-container">
+          <div class="skill-card">
+            <img src="images/Icon/317755_badge_html_html5_achievement_award_icon.png" alt="HTML5">
+            <h3>HTML5</h3>
+          </div>
+          <div class="skill-card">
+            <img src="images/Icon/317756_badge_css_css3_achievement_award_icon.png" alt="CSS3">
+            <h3>CSS3</h3>
+          </div>
+          <div class="skill-card">
+            <img src="images/Icon/4373217_java_logo_logos_icon.png" alt="Java">
+            <h3>Java</h3>
+          </div>
+          <div class="skill-card">
+            <img src="images/Icon/187_Js_logo_logos-256.webp" alt="JavaScript">
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill-card">
+            <img src="images/Icon/4518869_php_icon.png" alt="PHP">
+            <h3>PHP</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <h2 class="section-title"><span data-lang="en">Projects</span><span data-lang="ja">プロジェクト</span></h2>
+        <div class="projects-list">
+          <a href="group-seisaku-main/index.html" class="project-card" target="_blank" rel="noopener noreferrer">
+            <img src="group-seisaku-main/Theold.jpg" alt="Hiroshima Peace Memorial">
+            <h3>Hiroshima Peace Memorial</h3>
+            <div data-lang="en">
+              <p>An informational page about the Hiroshima Peace Memorial, focusing on history and design.</p>
+            </div>
+            <div data-lang="ja">
+              <p>広島平和記念資料館についての情報ページ。歴史とデザインに焦点を当てています。</p>
+            </div>
+          </a>
+          <a href="JS-DOM-FROM-ZERO-main/index.html" class="project-card" target="_blank" rel="noopener noreferrer">
+            <img src="JS-DOM-FROM-ZERO-main/dom.jpg" alt="JS DOM from Zero">
+            <h3>JS DOM from Zero</h3>
+            <div data-lang="en">
+              <p>A learning project that builds JavaScript DOM concepts step by step from scratch.</p>
+            </div>
+            <div data-lang="ja">
+              <p>JavaScriptのDOM概念を一からステップバイステップで構築する学習プロジェクト。</p>
+            </div>
+          </a>
+          <a href="jikyu-keisanki-main/index.html" class="project-card" target="_blank" rel="noopener noreferrer">
+            <img src="jikyu-keisanki-main/image/pose_kyosyu_girl.png" alt="Jikyu Keisanki">
+            <h3>Jikyu Keisanki</h3>
+            <div data-lang="en">
+              <p>An hourly wage calculator that computes pay from time worked.</p>
+            </div>
+            <div data-lang="ja">
+              <p>勤務時間から給与を計算する時給計算機。</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <h2 class="section-title"><span data-lang="en">Get In Touch</span><span data-lang="ja">お問い合わせ</span></h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <img src="images/Icon/9693558_google_mail_email_message_bubble_icon.png" alt="Email Icon">
+              </div>
+              <h3 data-lang="en">Email</h3><h3 data-lang="ja">メール</h3>
+              <p>ghorasiaakash25@gmail.com</p>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">
+                <img src="images/Icon/2697655_apple_phone_call_cell_emergency_icon.png" alt="Phone Icon">
+              </div>
+              <h3 data-lang="en">Phone</h3><h3 data-lang="ja">電話</h3>
+              <p>070-9021-4487</p>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">
+                <img src="images/Icon/4975305_google_google map_location_location place_map_icon.png" alt="Location Icon">
+              </div>
+              <h3 data-lang="en">Location</h3><h3 data-lang="ja">住所</h3>
+              <p data-lang="en">Tokyo, Japan</p><p data-lang="ja">日本、東京</p>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" action="contact.php" method="POST">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required>
+              <label for="name"><span data-lang="en">Your Name</span><span data-lang="ja">お名前</span></label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required>
+              <label for="email"><span data-lang="en">Your Email</span><span data-lang="ja">メールアドレス</span></label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" required>
+              <label for="subject"><span data-lang="en">Subject</span><span data-lang="ja">件名</span></label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" required></textarea>
+              <label for="message"><span data-lang="en">Your Message</span><span data-lang="ja">メッセージ</span></label>
+            </div>
+            <button type="submit" class="submit-btn"><span data-lang="en">Send Message</span><span data-lang="ja">送信する</span></button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <a href="#top" class="gotop" aria-label="Go to top">
+      <img src="images/2767220.png" alt="" />
+    </a>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Aakash</h3>
+          <p class="footer-tagline">Frontend Developer</p>
+        </div>
+        
+        <div class="social-media">
+          <h4 data-lang="en">Connect With Me</h4><h4 data-lang="ja">SNSでつながる</h4>
+          <div class="social-links">
+             <a href="https://github.com/Aakash-codex" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="github">
+              <img src="images/github.png" alt="" class="social-icon" />
+            </a>
+            <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <img src="images/facebook.png" alt="" class="social-icon" />
+            </a>
+            <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <img src="images/linkedin.png" alt="" class="social-icon" />
+            </a>
+            <a href="https://x.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)">
+              <img src="images/twitter (1).png" alt="" class="social-icon" />
+            </a>
+            <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <img src="images/instagram.png" alt="" class="social-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">© 2024 Aakash. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#"><span data-lang="en">Terms & Conditions</span><span data-lang="ja">利用規約</span></a>
+          <a href="#"><span data-lang="en">Privacy Policy</span><span data-lang="ja">プライバシーポリシー</span></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="javascript/portfolio.js"></script>
+    <script>
+      // Theme Toggle
+      const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+      const currentTheme = localStorage.getItem('theme');
+
+      if (currentTheme) {
+          document.body.classList.add(currentTheme);
+          if (currentTheme === 'light-theme') {
+              toggleSwitch.checked = true;
+          }
+      }
+
+      function switchTheme(e) {
+          if (e.target.checked) {
+              document.body.classList.add('light-theme');
+              localStorage.setItem('theme', 'light-theme');
+          } else {
+              document.body.classList.remove('light-theme');
+              localStorage.setItem('theme', 'dark-theme');
+          }    
+      }
+
+      toggleSwitch.addEventListener('change', switchTheme, false);
+
+      // Language Toggle
+      const langCheckbox = document.getElementById('langCheckbox');
+      const savedLang = localStorage.getItem('language') || 'en';
+
+      if (savedLang === 'ja') {
+          document.body.classList.add('lang-ja');
+          langCheckbox.checked = true;
+      }
+
+      langCheckbox.addEventListener('change', function() {
+          if (this.checked) {
+              document.body.classList.add('lang-ja');
+              localStorage.setItem('language', 'ja');
+          } else {
+              document.body.classList.remove('lang-ja');
+              localStorage.setItem('language', 'en');
+          }
+      });
+    </script>
+  </body>
+</html>

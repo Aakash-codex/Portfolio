@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="News - Aakash Portfolio">
+    <link rel="icon" type="image/png" href="images/Icon/A.png" sizes="64x64">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>News | Aakash Portfolio</title>
+    <style>
+      .news-detail-section {
+        padding: 120px 20px 80px;
+        background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        min-height: 80vh;
+      }
+      .news-detail-container {
+        max-width: 900px;
+        margin: 0 auto 40px;
+        background: linear-gradient(145deg, #1a1a1a, #000000);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(2, 183, 243, 0.2);
+        border: 1px solid rgba(2, 183, 243, 0.2);
+        scroll-margin-top: 100px;
+      }
+      .news-media-content {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        display: block;
+      }
+      .news-detail-title {
+        font-size: 2.5rem;
+        color: #d4d2cd;
+        margin-bottom: 20px;
+        text-shadow: 0 0 15px rgba(2, 183, 243, 0.3);
+      }
+      .news-detail-content {
+        font-size: 1.2rem;
+        line-height: 2;
+        color: #b0b0b0;
+      }
+      .back-btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 12px 25px;
+        background: #02b7f3;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+      .back-btn:hover {
+        background: #0099d6;
+        transform: translateY(-2px);
+      }
+      .billiards-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+      .billiards-gallery img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        transition: transform 0.3s ease;
+      }
+      .billiards-gallery img:hover {
+        transform: scale(1.02);
+      }
+      @media (max-width: 768px) {
+        .news-detail-title {
+          font-size: 1.8rem;
+        }
+        .news-detail-container {
+          padding: 25px;
+        }
+        .billiards-gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="lang-en">
+    <header id="top">
+      <div class="logo-container">
+        <h2><a href="index.html" class="logotext">Aakash</a></h2>
+      </div>
+      
+      <nav>
+        <a href="index.html"><span data-lang="en">Home</span><span data-lang="ja">ホーム</span></a>
+        <a href="index.html#about"><span data-lang="en">About</span><span data-lang="ja">自己紹介</span></a>
+        <a href="index.html#news"><span data-lang="en">News</span><span data-lang="ja">ニュース</span></a>
+        <a href="index.html#projects"><span data-lang="en">Projects</span><span data-lang="ja">プロジェクト</span></a>
+        <a href="index.html#skills"><span data-lang="en">Skills</span><span data-lang="ja">スキル</span></a>
+        <a href="index.html#contact"><span data-lang="en">Contact</span><span data-lang="ja">お問い合わせ</span></a>
+      </nav>
+
+      <div class="header-controls">
+        <!-- Language Toggle -->
+        <label class="lang-switch" for="langCheckbox">
+          <input type="checkbox" id="langCheckbox" />
+          <div class="slider">
+            <span class="en icon">EN</span>
+            <span class="jp icon">日本語</span>
+          </div>
+        </label>
+
+        <!-- Theme Toggle -->
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider">
+            <span class="icon">🌙</span>
+            <span class="icon">☀️</span>
+          </div>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <section class="news-detail-section">
+        <!-- Inokashira News -->
+        <div class="news-detail-container" id="inokashira">
+          <h1 class="news-detail-title"><span data-lang="en">Beautiful scenery of Inokashira Park</span><span data-lang="ja">井の頭恩賜公園の美しい景色</span></h1>
+          <img src="images/inokasira.jpeg" alt="井の頭恩賜公園" class="news-media-content">
+          <video controls playsinline class="news-media-content">
+            <source src="images/inokasira.MOV" type="video/mp4">
+            <source src="images/inokasira.MOV" type="video/quicktime">
+            お使いのブラウザは動画タグをサポートしていません。
+          </video>
+          <div class="news-detail-content">
+            <div data-lang="en">
+              <p>
+                Inokashira Park has become very popular lately.<br>
+                It is famous for cherry blossom viewing during this season.<br>
+                <br>
+                Many foreigners and Japanese people come every day.<br>
+                On holidays, the park gets very crowded.<br>
+                <br>
+                The park is very beautiful during this season.<br>
+                I took a photo "inokasira.jpeg" and a video "inokasira.MOV".<br>
+                <br>
+                If I get a chance, I want to go and enjoy the scenery.
+              </p>
+            </div>
+            <div data-lang="ja">
+              <p>
+                井の頭恩賜公園は、最近とても人気があります。<br>
+                今の季節は、花見で有名です。<br>
+                <br>
+                外国人や日本人が、毎日たくさん来ます。<br>
+                休みの日は、公園は人がいっぱいになります。<br>
+                <br>
+                この季節の公園は、とてもきれいです。<br>
+                私は「inokasira.jpeg」の写真と「inokasira.MOV」の動画を撮りました。<br>
+                <br>
+                もしチャンスがあれば、行って景色を楽しみたいです。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Graduation News -->
+        <div class="news-detail-container" id="graduation">
+          <h1 class="news-detail-title"><span data-lang="en">March 2026 Graduation Ceremony</span><span data-lang="ja">２０２６年３月 卒業式</span></h1>
+          <img src="images/IMG_0469.jpeg" alt="Graduation Ceremony 2026" class="news-media-content">
+          <div class="news-detail-content">
+            <div data-lang="en">
+              <p>
+                Thank you everyone for the two years.<br>
+                During these two years, I learned programming techniques.<br>
+                Also, I interacted with people from various countries and cultures, and learned about human kindness.<br>
+                Thank you very much.
+              </p>
+            </div>
+            <div data-lang="ja">
+              <p>
+                2年間、皆様お疲れ様でした。<br>
+                この2年間で、プログラミングの技術（ぎじゅつ）を学びました。<br>
+                また、いろいろな国の人たちと文化（ぶんか）のやり取りをして、人の優（やさ）しさを学びました。<br>
+                本当にありがとうございました。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Billiards News -->
+        <div class="news-detail-container" id="billiards">
+          <h1 class="news-detail-title"><span data-lang="en">Looking for Billiards buddies!</span><span data-lang="ja">ビリヤード仲間、募集します！</span></h1>
+          <div class="billiards-gallery">
+            <img src="images/pool1.jpeg" alt="Billiards 1">
+            <img src="images/pool2.jpeg" alt="Billiards 2">
+            <img src="images/pool3.jpeg" alt="Billiards 3">
+            <img src="images/pool4.jpeg" alt="Billiards 4">
+          </div>
+          <div class="news-detail-content">
+            <div data-lang="en">
+              <p>
+                I like playing billiards sometimes.<br>
+                I used to go to billiard halls often and had a great time. But lately, I haven't been able to go much.<br>
+                If anyone is interested in billiards, why don't we play a game together?
+              </p>
+            </div>
+            <div data-lang="ja">
+              <p>
+                私はときどきビリヤードをするのが好きです。<br>
+                以前はよくビリヤード場に行って、楽しい時間をすごしていました。でも、最近はあまり行けていません。<br>
+                もしビリヤードに興味がある人がいたら、いっしょにゲームをしませんか？
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <a href="index.html#news" class="back-btn"><span data-lang="en">← Back to Home</span><span data-lang="ja">← ホームに戻る</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Aakash</h3>
+          <p class="footer-tagline">Frontend Developer</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2024 Aakash. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="javascript/portfolio.js"></script>
+    <script>
+      // Theme Toggle
+      const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+      const currentTheme = localStorage.getItem('theme');
+
+      if (currentTheme) {
+          document.body.classList.add(currentTheme);
+          if (currentTheme === 'light-theme') {
+              toggleSwitch.checked = true;
+          }
+      }
+
+      function switchTheme(e) {
+          if (e.target.checked) {
+              document.body.classList.add('light-theme');
+              localStorage.setItem('theme', 'light-theme');
+          } else {
+              document.body.classList.remove('light-theme');
+              localStorage.setItem('theme', 'dark-theme');
+          }    
+      }
+
+      toggleSwitch.addEventListener('change', switchTheme, false);
+
+      // Language Toggle
+      const langCheckbox = document.getElementById('langCheckbox');
+      const savedLang = localStorage.getItem('language') || 'en';
+
+      if (savedLang === 'ja') {
+          document.body.classList.add('lang-ja');
+          langCheckbox.checked = true;
+      }
+
+      langCheckbox.addEventListener('change', function() {
+          if (this.checked) {
+              document.body.classList.add('lang-ja');
+              localStorage.setItem('language', 'ja');
+          } else {
+              document.body.classList.remove('lang-ja');
+              localStorage.setItem('language', 'en');
+          }
+      });
+    </script>
+  </body>
+</html>
