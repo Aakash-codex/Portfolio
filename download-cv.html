@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Download | Aakash Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .cv-section {
+            padding: 120px 20px 80px;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cv-container {
+            max-width: 600px;
+            width: 100%;
+            background: linear-gradient(145deg, #1a1a1a, #000000);
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(2, 183, 243, 0.2);
+            border: 1px solid rgba(2, 183, 243, 0.2);
+            text-align: center;
+        }
+        .cv-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .cv-title {
+            font-size: 2.2rem;
+            color: #d4d2cd;
+            margin-bottom: 15px;
+        }
+        .cv-description {
+            color: #b0b0b0;
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 15px 35px;
+            background: #02b7f3;
+            color: white;
+            text-decoration: none;
+            border-radius: 35px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(2, 183, 243, 0.3);
+        }
+        .download-btn:hover {
+            background: #0099d6;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(2, 183, 243, 0.4);
+        }
+        .back-link {
+            display: block;
+            margin-top: 25px;
+            color: #888;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #02b7f3;
+        }
+        
+        /* Light Theme Support */
+        body.light-theme .cv-section {
+            background: #ffffff;
+        }
+        body.light-theme .cv-container {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        body.light-theme .cv-title {
+            color: #111;
+        }
+        body.light-theme .cv-description {
+            color: #444;
+        }
+    </style>
+</head>
+<body class="lang-en">
+    <header id="top">
+        <div class="logo-container">
+            <h2><a href="index.html" class="logotext">Aakash</a></h2>
+        </div>
+        <nav>
+            <a href="index.html"><span data-lang="en">Home</span><span data-lang="ja">ホーム</span></a>
+            <a href="index.html#about"><span data-lang="en">About</span><span data-lang="ja">自己紹介</span></a>
+            <a href="index.html#news"><span data-lang="en">News</span><span data-lang="ja">ニュース</span></a>
+            <a href="index.html#projects"><span data-lang="en">Projects</span><span data-lang="ja">プロジェクト</span></a>
+            <a href="index.html#skills"><span data-lang="en">Skills</span><span data-lang="ja">スキル</span></a>
+            <a href="index.html#contact"><span data-lang="en">Contact</span><span data-lang="ja">お問い合わせ</span></a>
+        </nav>
+        <div class="header-controls">
+            <label class="lang-switch" for="langCheckbox">
+                <input type="checkbox" id="langCheckbox" />
+                <div class="slider">
+                    <span class="en icon">EN</span>
+                    <span class="jp icon">日本語</span>
+                </div>
+            </label>
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider">
+                    <span class="icon">🌙</span>
+                    <span class="icon">☀️</span>
+                </div>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <section class="cv-section">
+            <div class="cv-container">
+                <div class="cv-icon">📄</div>
+                <h1 class="cv-title">
+                    <span data-lang="en">Download My CV</span>
+                    <span data-lang="ja">履歴書をダウンロード</span>
+                </h1>
+                <p class="cv-description">
+                    <span data-lang="en">Thank you for your interest. You can download my resume by clicking the button below.</span>
+                    <span data-lang="ja">ご興味をお持ちいただきありがとうございます。下のボタンをクリックして履歴書をダウンロードできます。</span>
+                </p>
+                
+                <a href="履歴書.pdf" download class="download-btn">
+                    <span data-lang="en">Download PDF</span>
+                    <span data-lang="ja">PDFをダウンロード</span>
+                </a>
+
+                <a href="index.html" class="back-link">
+                    <span data-lang="en">← Back to Portfolio</span>
+                    <span data-lang="ja">← ポートフォリオに戻る</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p class="copyright">© 2024 Aakash. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            document.body.classList.add(currentTheme);
+            if (currentTheme === 'light-theme') toggleSwitch.checked = true;
+        }
+        toggleSwitch.addEventListener('change', (e) => {
+            if (e.target.checked) {
+                document.body.classList.add('light-theme');
+                localStorage.setItem('theme', 'light-theme');
+            } else {
+                document.body.classList.remove('light-theme');
+                localStorage.setItem('theme', 'dark-theme');
+            }    
+        });
+
+        // Language Toggle
+        const langCheckbox = document.getElementById('langCheckbox');
+        const savedLang = localStorage.getItem('language') || 'en';
+        if (savedLang === 'ja') {
+            document.body.classList.add('lang-ja');
+            langCheckbox.checked = true;
+        }
+        langCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                document.body.classList.add('lang-ja');
+                localStorage.setItem('language', 'ja');
+            } else {
+                document.body.classList.remove('lang-ja');
+                localStorage.setItem('language', 'en');
+            }
+        });
+    </script>
+</body>
+</html>
